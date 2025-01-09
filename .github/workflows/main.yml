@@ -48,10 +48,9 @@ jobs:
         run: |
           python -m pip install flake8
 
-      - name: 🔍 Run Linter
-        run: |
-          flake8 scripts/ notebooks/  # Adjust paths as needed
-
+      - name: Lint with flake8
+        run: flake8 path/to/your/python/files  # Adjust paths as needed
+              # Adjust paths as needed
   # Job for running tests
   test:
     name: Run Tests
